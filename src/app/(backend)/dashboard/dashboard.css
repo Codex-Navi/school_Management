@@ -1,0 +1,12 @@
+.Homecontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #e6ebee;
+    width: 100%;
+   
+  }

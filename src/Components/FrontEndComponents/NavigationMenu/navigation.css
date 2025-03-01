@@ -1,0 +1,127 @@
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    padding: 10px;
+}
+
+.navigationcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo span {
+    margin-left: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav a {
+    color: #4a5568;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3182ce;
+}
+
+nav .signup {
+    background-color: #3182ce;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav .signup:hover {
+    background-color: #2b6cb0;
+}
+
+.mega-menu {
+    position: relative;
+}
+
+.mega-menu-content {
+    position: absolute;
+    left: -900px;
+    top: 100%;
+    overflow:auto;
+    margin-top: 8px;
+   width: 100vw;
+   z-index: 100;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+}
+
+.mega-menu:hover .mega-menu-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 24px;
+}
+
+@media (min-width: 640px) {
+    .mega-menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .mega-menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.feature-card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card .icon {
+    color: #3182ce;
+    font-size: 1.25rem;
+}
+
+.feature-card h2 {
+    margin-left: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #718096;
+    margin: 8px 0 0;
+}

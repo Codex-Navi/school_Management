@@ -1,0 +1,17 @@
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stats .stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .stats .stat:last-child {
+    margin-right: 0;
+  }

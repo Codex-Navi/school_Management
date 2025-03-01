@@ -1,0 +1,19 @@
+
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header .icons i {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }

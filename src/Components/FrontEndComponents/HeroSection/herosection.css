@@ -1,0 +1,96 @@
+.hero-container {
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 100px;
+
+  
+  }
+  
+  .welcome-banner {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .welcome-banner i {
+    margin-right: 8px;
+  }
+  
+  .hero-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 32px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+.logo-item span{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+  .btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn i {
+    margin-left: 8px;
+  }
+  
+  .btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btn-secondary {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    background:white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #eff6ff;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: 3rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+  }

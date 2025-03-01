@@ -1,0 +1,81 @@
+.loginMainCont{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.loginfromSecton{
+    width: 50%;
+   
+  
+
+
+}
+
+.carouslSection{
+    width: 50%;
+    
+   height: 100%;
+
+}
+
+.loginfrom{
+   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    margin-top: 50px;
+
+}
+.loginfromCont{
+  
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginfromCont h2{
+    margin-bottom: 40px;
+}
+
+.googlebtnwrap{
+    border: 2px solid #1976d2 ;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #1976d2 ;
+    transition: all 0.5s linear;
+   
+}
+
+.googlebtnwrap:hover{
+    background: white;
+    
+}
+
+.googlebtn{
+    color: white !important;
+    transition: all 0.5s linear;
+
+}
+
+.googlebtn:hover{
+    color: #1976d2 !important ;
+}
+
+.googleicon{
+ height: 30px;
+ width: 30px;
+ background: white;
+ margin-right: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ padding: 2;
+}

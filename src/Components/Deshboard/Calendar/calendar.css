@@ -1,0 +1,24 @@
+.calendar,
+.teacher-details,
+.unpaid-students {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.calendar .header,
+.teacher-details .header,
+.unpaid-students .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar .days,
+.calendar .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}

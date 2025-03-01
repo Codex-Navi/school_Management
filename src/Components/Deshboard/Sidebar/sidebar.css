@@ -1,0 +1,29 @@
+
+  .sidebar {
+    width: 60px;
+    background-color: #4c51bf;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    transition: all 0.3s linear;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .sidebar a:hover {
+    background-color: #5a67d8;
+  }
+
+  .dashboardsidebar ul{
+  margin-bottom: 20px;
+  cursor: pointer;
+  }
+
+  
