@@ -96,7 +96,10 @@ function Sidebar(props) {
         <span>It Helpdesk</span>
       </div>}
 
-
+      {props.sideBarOpen == true && <div>
+        
+        <Image src={''}/>
+        </div>}
 
 
       <nav className='dashboardsidebar'>
