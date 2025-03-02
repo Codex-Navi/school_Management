@@ -15,6 +15,7 @@ import { TbBus } from "react-icons/tb";
 import { LiaMoneyCheckAltSolid } from "react-icons/lia";
 import { GrResources } from "react-icons/gr";
 import { IoBarChart } from "react-icons/io5";
+import Image from 'next/image';
 
 function Sidebar(props) {
 
@@ -96,9 +97,9 @@ function Sidebar(props) {
         <span>It Helpdesk</span>
       </div>}
 
-      {props.sideBarOpen == true && <div>
+      {props.sideBarOpen == false && <div style={{marginBottom:"40px",width:'60px',marginLeft:"-20px",display:'flex',alignItems:'center',justifyContent:'center'}}>
         
-        <Image src={''}/>
+        <Image src={'/images/school-logo.png'} alt="" width={40} height={40}/>
         </div>}
 
 

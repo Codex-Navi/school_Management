@@ -1,0 +1,199 @@
+/* Sidebar Container */
+.right-sidebar {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    margin: 0 auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Section Styling */
+  .sidebar-section {
+    margin-bottom: 24px;
+  }
+  
+  .section-title {
+    color: #6b46c1;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    
+  }
+  
+  /* Recent Matches */
+  .matches-container {
+   
+    margin-bottom: 12px;
+  }
+  
+  .match-item {
+    display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  }
+  
+  .avatar-container {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .percentage-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  /* Messages */
+  .messages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .message-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+  }
+  
+  .message-content {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .message-text {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .message-time {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+  }
+  
+  /* Food Picks */
+  .food-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .food-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .food-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .food-details {
+    padding: 12px;
+  }
+  
+  .food-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #333;
+  }
+  
+  .food-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* View More Button */
+  .view-more-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #6b46c1;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #f9f5ff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 12px;
+    }
+  
+    .matches-container {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .matches-container {
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+  
+    .section-title {
+      font-size: 16px;
+    }
+  
+    .food-title {
+      font-size: 15px;
+    }
+  
+    .food-description {
+      font-size: 13px;
+    }
+  }
+  
+  
