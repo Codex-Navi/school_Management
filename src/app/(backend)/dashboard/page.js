@@ -19,6 +19,7 @@ import { MdOutlineMessage } from "react-icons/md";
 import { IoNotifications } from "react-icons/io5";
 import { IoSettings } from "react-icons/io5";
 import RightSideBar from '@/Components/Deshboard/RightASdieBarSection/RightSideBar';
+import Notification from '@/Components/Deshboard/Notification/Notification';
 
 function page(props) {
 
@@ -26,6 +27,7 @@ function page(props) {
   const [sideBarOpen, setSideBarOpen] = useState(false)
   const [darkmode, setDarkMode] = useState(false)
   const [rightSideBar,setRightSideBar]=useState(false)
+  const [notification,setNotification]=useState(false)
 
 
 
@@ -41,6 +43,10 @@ function page(props) {
 
   function handleRightSdieDrawer(){
     setRightSideBar(!rightSideBar)
+  }
+
+  function handleNotification(){
+    setNotification(!notification)
   }
 
   return (
@@ -60,7 +66,13 @@ function page(props) {
             <BsFillMenuButtonWideFill style={{ marginRight: '20px' }} onClick={handleRightSdieDrawer} />
             <div style={{ marginRight: '20px', cursor: 'pointer' }}>{darkmode == false ? <LuMoonStar onClick={handleDrakMode} /> : <FiSun onClick={handleDrakMode} />}</div>
             <MdOutlineMessage style={{ marginRight: '20px' }} />
-            <IoNotifications style={{ marginRight: '20px' }} />
+            <div style={{ marginRight: '20px',position:'relative' }}>
+
+             
+            <IoNotifications onClick={handleNotification}  />
+            
+           {notification && <Notification />}
+            </div>
             <IoSettings style={{ marginRight: '20px' }} />
             <Avatar alt="Remy Sharp" src="/images/2.jpg" style={{ marginRight: '20px' }} />
 
