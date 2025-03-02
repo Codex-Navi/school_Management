@@ -21,7 +21,7 @@ const RecentMatches = ({ matches }) => {
              
             </div>
            
-            <div style={{border:'2px solid #A098AE',width:'40px',height:'40px',borderRadius:'50%',display:'flex',justifyContent:'center',alignItems:'center',color:' #A098AE',fontSize:'22px'}}>
+            <div style={{border:'2px solid #a098ae',width:'40px',height:'40px',borderRadius:'50%',display:'flex',justifyContent:'center',alignItems:'center',color:' #a098ae',fontSize:'22px'}}>
               <span ><MdMail /></span>
             </div>
           </div>

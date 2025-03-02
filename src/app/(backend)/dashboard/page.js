@@ -6,7 +6,6 @@ import Header from '@/Components/Deshboard/Header/Header';
 import Stats from '@/Components/Deshboard/Stats/Stats';
 import Charts from '@/Components/Deshboard/Charts/Charts';
 import Calendar from '@/Components/Deshboard/Calendar/Calendar';
-import TeacherDetails from '@/Components/Deshboard/TeacherDetails/TeacherDetails';
 import UnpaidStudents from '@/Components/Deshboard/UnpaidStudents/UnpaidStudents';
 import { Avatar, Drawer } from '@mui/material';
 import { MdDashboardCustomize } from "react-icons/md";
@@ -51,7 +50,7 @@ function page(props) {
       <Sidebar sideBarOpen={sideBarOpen} />
 
       <div className="main-content">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '24px', fontWeight: 'bolder', backgroundColor: '#4c51bf', padding: "10px 20px " }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '24px', fontWeight: 'bolder', backgroundColor: '#6366f1', padding: "10px 20px " }}>
 
           <section style={{ display: 'flex', alignItems: 'center', color: "white" }}> {sideBarOpen == true ? <FaLeftLong style={{ cursor: 'pointer', marginRight: '10px' }} onClick={manageSideBar} /> : <FaRightLong style={{ cursor: 'pointer', marginRight: '10px' }} onClick={manageSideBar} />} <h1>Dashboard</h1></section>
 
@@ -88,8 +87,9 @@ function page(props) {
         <Stats />
         <Charts />
         <Calendar />
-        <TeacherDetails />
         <UnpaidStudents />
+        
+        
         <footer className="footer">
           <p>Copyright © Designed & Developed by DesignLab 2025</p>
         </footer>

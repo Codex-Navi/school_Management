@@ -1,20 +1,207 @@
-.teacher-details table,
-.unpaid-students table {
+.student-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 100%;
+}
+
+.table-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.table-content {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.teacher-details table th,
-.teacher-details table td,
-.unpaid-students table th,
-.unpaid-students table td {
-  padding: 10px;
-  border-bottom: 1px solid #e2e8f0;
+thead {
+  background-color: #f5f3fa;
 }
 
-.unpaid-students table img {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  white-space: nowrap;
 }
+
+.required {
+  color: #6c63ff;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.class-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ff7043;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.class-label {
+  font-size: 12px;
+  color: #888;
+}
+
+.class-value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.print-button,
+.more-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.print-button:hover,
+.more-button:hover {
+  color: #333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.pagination-info {
+  font-size: 13px;
+  color: #666;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pagination-button {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-number {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.page-number.active {
+  background-color: #6c63ff;
+  color: white;
+  border-color: #6c63ff;
+}
+
+.name-column,
+.id-column,
+.class-column,
+.fees-column,
+.rank-column,
+.action-column {
+  white-space: nowrap;
+}
+
+.fees-cell {
+  font-weight: 500;
+}
+
+.rank-cell {
+  color: #888;
+}
+
+.id-cell {
+  color: #6c63ff;
+}
+
