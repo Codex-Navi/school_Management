@@ -20,6 +20,7 @@ function Stats(props) {
           <div>
             <h2>Teachers</h2>
             <p>74K</p>
+            {/* dlksfgjlkdfgjlkdfgj */}
           </div>
         </div>
         <div className="stat">
